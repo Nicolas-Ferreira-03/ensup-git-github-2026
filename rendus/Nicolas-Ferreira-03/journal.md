@@ -1,0 +1,3 @@
+Preuve : Le résultat de git log --oneline -- acces.md permet de retrouver le commit associé au fichier. La commande git show permet d'examiner le commit et les modifications qu'il contient.
+
+Explication : Un fichier non suivi n'apparaît pas dans le git diff ordinaire, car Git ne compare pas encore son contenu avec une version suivie. Après git add, le fichier entre dans l'index et git diff --cached affiche les changements préparés pour le prochain commit. Une fois le commit créé, git log --oneline -- acces.md permet de retrouver les commits associés à ce fichier.
