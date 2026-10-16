@@ -109,6 +109,7 @@ Fast-forward du TP 2 : main n'avait pas avancé indépendamment. Git a simplemen
 
 
 
+
 Fusion sans fast-forward ici : main et feature/accessibilite ont chacune leur propre commit. Git crée un commit de fusion avec deux parents.
 
 
