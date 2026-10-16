@@ -16,17 +16,17 @@ Identifiant du commit de fusion : aa72d87
 
 Premier parent : 92a906d
 
- Deuxième parent : 8f7934d
+Deuxième parent : 8f7934d
 
 
 
 
 
-Les deux branches ont avancé indépendamment depuis un commit commun. La fusion `--no-ff` a créé un commit de fusion possédant deux parents. Aucun conflit n'est apparu, car 2 fichiers différents.
+Les deux branches ont avancé indépendamment depuis un commit commun. La fusion --no-ff a créé un commit de fusion possédant deux parents. Aucun conflit n'est apparu, car 2 fichiers différents.
 
 
 
-Fast-forward du TP 2, Git n'a pas seulement déplacé sur le `main` : il a créé un commit qui relie les deux historiques.
+Fast-forward du TP 2, Git n'a pas seulement déplacé sur le main : il a créé un commit qui relie les deux historiques.
 
 L'enregistrement dans l'éditeur sauvegarde les données sur le disque,  git add prépare ces données pour le contrôle de version.
 
@@ -115,3 +115,39 @@ Fusion sans fast-forward ici : main et feature/accessibilite ont chacune leur pr
 
 
 Pourquoi aucun conflit ? Les commits modifient des fichiers distincts. Une divergence ne provoque pas automatiquement un conflit
+
+
+https://github.com/AbidHamza/ensup-git-github-2026/pull/8
+
+
+Un fork est une copie du dépôt hébergée sur GitHub lié au projet mère.
+
+Un clone est une copie locale du dépôt sur mon ordinateur.
+
+Une branche est une sous partie d'un dépôt, qui permet de travailler sans modifier la branche principale.
+
+
+
+
+Permission denied :
+
+Diagnostic : l'URL du dépôt distant peut envoyer vers un dépôt pour lequel je n'ai pas les droits d'écriture, ou le compte authentifié peut être incorrect.
+
+Commande de contrôle : `git remote -v`
+
+
+
+Non-fast-forward :
+
+Diagnostic : le dépôt distant contient des commits absents de ma branche locale. Git refuse le push pour protéger l'historique distant.
+
+Commande de contrôle : `git fetch origin`
+
+
+
+Nothing to commit
+
+Diagnostic : le fichier n'a peut-être pas été enregistré, il peut être ignoré, se trouver dans un autre dossier ou avoir déjà été commité.
+
+Commande de contrôle : `git status --short`
+
